@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>𝐅𝐢𝐧𝐚𝐧𝐜𝐢𝐚𝐥 𝐏𝐥𝐚𝐧𝐧𝐞𝐫💸</h1>
+
+  <!-- Income Input -->
+  <section>
+    <h2>Tambah Pemasukan</h2>
+    <p style="margin-bottom: 20px;">𝘔𝘢𝘴𝘶𝘬𝘢𝘯 𝘴𝘦𝘮𝘶𝘢 𝘱𝘦𝘮𝘢𝘴𝘶𝘬𝘢𝘯 𝘺𝘢𝘯𝘨 𝘬𝘢𝘮𝘶 𝘥𝘢𝘱𝘢𝘵𝘬𝘢𝘯 𝘺𝘢𝘢🫵</p>
+    <input type="number" id="income-amount" placeholder="Nominal" min="0">
+    <input type="text" id="income-note" placeholder="Catatan (opsional)">
+    <button id="add-income">Tambah Income</button>
+  </section>
+
+  <!-- Outcome Input -->
+  <section>
+    <h2>Tambah Pengeluaran</h2>
+    <p style="margin-bottom: 20px;">𝘐𝘴𝘪 𝘴𝘦𝘮𝘶𝘢 𝘱𝘦𝘯𝘨𝘦𝘭𝘶𝘢𝘳𝘢𝘯 𝘥𝘦𝘯𝘨𝘢𝘯 𝘫𝘶𝘫𝘶𝘳. 𝘋𝘰𝘮𝘱𝘦𝘵 𝘴𝘶𝘥𝘢𝘩 𝘪𝘬𝘩𝘭𝘢𝘴, 𝘬𝘢𝘮𝘶 𝘫𝘶𝘨𝘢 𝘩𝘢𝘳𝘶𝘴</p>
+    <input type="number" id="outcome-amount" placeholder="Nominal" min="0">
+    <input type="text" id="outcome-note" placeholder="Catatan (opsional)">
+    <button id="add-outcome">Tambah Outcome</button>
+  </section>
+
+  <!-- Hutang Input -->
+  <section>
+    <h2>Tambah Hutang</h2>
+    <input type="number" id="debt-amount" placeholder="Total Hutang" min="0">
+    <button id="add-debt">Tambah Hutang</button>
+  </section>
+
+  <!-- Wishlist Input -->
+  <section>
+    <h2>Wishlist</h2>
+    <label for="wishlist-name">Nama Barang</label>
+    <input type="text" id="wishlist-name" placeholder="Nama barang yang diinginkan">
+    
+    <label for="wishlist-price">Harga Barang</label>
+    <input type="number" id="wishlist-price" placeholder="Harga barang" min="0">
+    
+    <button id="save-wishlist">Simpan Wishlist</button>
+  </section>
+
+  <br>
+  <div class="link-container">
+    <a class="nav-link" href="recap.html">Lihat Ringkasan Keuangan</a>
+    <a class="nav-link" href="https://docs.google.com/spreadsheets/d/1WLc13QzFsteDChkuC5PtxXjeFM911gD145qxqGjmwJo/edit?usp=sharing" target="_blank">Gunakan Spreadsheet</a>
+  </div>
+
+ <!-- Footer Statis -->
+  <div class="footer-box">
+    <p>💡ᵂᵃᵈⁱˢᵗʸˡᵉ</p>
+  </div>
+
+<p id="quote" style="margin-top: 20px; font-style: italic;"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
