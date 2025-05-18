@@ -287,21 +287,56 @@ body {
   padding-bottom: 80px; /* Memberi ruang di bawah agar tombol tidak tertutup */
 }
 
-/* Footer Statis */
 .footer-box {
-  position: fixed; /* Membuat footer tetap di bawah */
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   background-color: #74a0cc;
   color: white;
   text-align: center;
-  padding: 5px;
-  font-size: 28px;
+  padding: 10px 5px 5px; /* Ruang lebih untuk teks diam dan bergerak */
+  font-size: 20px;
   font-weight: bold;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  overflow: hidden;
 }
+
+/* Teks Diam */
+.static-text {
+  margin: 0;
+  font-size: 16px; /* Ukuran lebih kecil */
+}
+
+/* Container untuk marquee */
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 18px; /* Bisa disesuaikan */
+  margin-top: 5px;
+}
+
+/* Teks Bergerak */
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  animation: slide-right 12s linear infinite;
+  font-size: 10px; /* Ukuran lebih kecil untuk teks berjalan */
+}
+
+@keyframes slide-right {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
 
 .footer-box p {
   margin: 0;
