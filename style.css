@@ -323,7 +323,7 @@ body {
   display: inline-block;
   white-space: nowrap;
   position: absolute;
-  animation: slide-right 15s linear infinite;
+  animation: slide-right 12s linear infinite;
   font-size: 10px; /* Ukuran lebih kecil untuk teks berjalan */
 }
 
